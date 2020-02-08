@@ -18,6 +18,46 @@
             margin-right: auto;
             max-width: 800px;
         }
+        
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #4C5760;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+    
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+         }
+    
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+         }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
     </style>
 </head>
 
@@ -60,7 +100,7 @@
             </div>
 
             <div class="center" style="border:none">
-                <button onclick="check()">Submit</button>
+                <button class="button" style="vertical-align:middle" onclick="check()"><span>Submit</span></button>
                 <!--<button onClick="sanity()">sanity</button>-->
             </div>
     
@@ -110,9 +150,9 @@
 
     </script>
     <div class="center">
-        <div id="continue" style="display:none; max-width: fit-content;">
+        <div id="continue" style="display:none; max-width: fit-content;" class="center">
             <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
-            <button onclick="window.location.href = 'https://sporadicabigail.github.io/t9hacks-2020/html/more.html';"> Next page </button>
+            <button class="button" style="vertical-align:middle" onclick="window.location.href = 'https://sporadicabigail.github.io/t9hacks-2020/html/more.html';"><span> Next page </span></button>
         </div>
     </div>
 
