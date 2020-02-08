@@ -2,29 +2,18 @@
 <html>
 <body>
 
-<h1> Binary </h1>
-<p> Binary is the language of computers, and it works only in zeros and ones. Every letter has its own 
-unique combination of zeros and ones</p>
-<b> The binary for <i> cat </i> is 01100011 01100001 01110100 </b>
-<p> Match the binary to the letters! </p>
-<!--> https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript <-->  
-  
-<script> 
-  // cards array holds all cards
-  let card = document.getElementsByClassName("card");
-  let cards = [...card];
-  // loop to add event listeners to each card
-  for (var i = 0; i < cards.length; i++){
-     cards[i].addEventListener("click", displayCard);
-  };
-  // toggles open and show class to display cards
-  var displayCard = function (){
-     this.classList.toggle("open");
-     this.classList.toggle("show");
-     this.classList.toggle("disabled");
-  }
-  
-</script>
+  <h1> Binary </h1>
+  <p> Binary is the language of computers, and it works only in zeros and ones. Every letter has its own 
+  unique combination of zeros and ones.</p>
+  <b> The binary for <i> cat </i> is 01100011 01100001 01110100. </b>
+  <p> Match the binary to the letters! </p>
+  <!--> https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript <-->  
+  <p> What corresponds to 01100011? </p>
+  <!-->https://www.dummies.com/web-design-development/site-development/how-to-put-text-boxes-in-an-html5-form/ <-->
+  <label>Text box</label>
+          <input type = "text"
+                 id = "myText"
+                 value = "text here" />
   
 </body>
 </html>
