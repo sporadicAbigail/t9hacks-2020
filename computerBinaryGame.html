@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style>
+#continue {
+  width: 1000px;
+  height: 100px;
+  background-color: lightblue;
+}
+#gah {
+  width: 1000px;
+  height: 100px;
+  background-color: pink;
+}
+</style>
 <body>
 
   <h1> Binary </h1>
@@ -26,35 +38,54 @@
                  answerThird = "text here" />
   
   <button onclick="check()">Submit</button>
+  <button onClick="sanity()">sanity</button>
+  
+
   
   <script>
     //https://stackoverflow.com/questions/25899694/comparing-form-input-values
+    //https://www.w3schools.com/jsref/prop_style_display.asp
     var firstBoxJS = document.getElementById('firstBox');
     var secondBoxJS = document.getElementById('secondBox');
     var thirdBoxJS = document.getElementByID('thirdBox');
     var correct = 0;
     
     function check(){
-      if(firstBoxJS.answerFirst.value != c){
+      if(firstBoxJS.answerFirst.value != "c"){
         alert("Your first answer is incorrect, please try again!");
+        document.getElementById("continue").style.display = "block";
       } else {
         alert("Your first answer is correct, great job!");
         correct++;
       }
-      if(secondBoxJS.answerSecond.value != a){
+      if(secondBoxJS.answerSecond.value != "a"){
          alert("Your second answer is incorrect, please try again!");
       } else {
         alert("Your second answer is correct, great job!");
         correct++;
       }
-      if(thirdBoxJS.answerThird.value != t){
+      if(thirdBoxJS.answerThird.value != "t"){
         alert("Your third answer is incorrect, please try again!");
       } else {
         alert("Your third answer is correct, great job!");
         correct++;
       }
+      
+      if (correct == 3){
+          document.getElementById("continue").style.display = "block";
+      }
     }
+      function sanity(){
+        document.getElementById("continue").style.display = "block";
+      }
   </script>
+<div id="continue" style="display:none;">
+  <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
+  <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
+</div>
+<div id="gah" style="display:block;">
+  one
+  </div>
   
 </body>
 </html>
