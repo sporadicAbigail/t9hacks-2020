@@ -1,111 +1,132 @@
 <!DOCTYPE html>
 
-<style>
-  .center {
-      margin: auto;
-      width: 60%;
-      border: 3px solid #000055;
-      padding: 10px;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 800px;
-  }
-</style>
+<head>
+    <title>KomputerLearn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/assets/Snoop_dogg_OS.png">
+    <link rel="stylesheet" href="Keyboard/Keyboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #000055;
+            padding: 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
 
 <html>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <style>
 #continue {
-  width: 1000px;
-  height: 100px;
-  background-color: lightblue;
+    width: 1000px;
+    height: 100px;
+    background-color: lightblue;
 }
+
 #gah {
-  width: 1000px;
-  height: 100px;
-  background-color: pink;
+    width: 1000px;
+    height: 100px;
+    background-color: pink;
 }
+
 </style>
-<body>
-  <div class="center">
-    <h1> Binary </h1>
-    <p> Binary is the language of computers, and it works only in zeros and ones. Every letter has its own 
-    unique combination of zeros and ones.</p>
-  </div>
-  <b> The binary for <i> cat </i> is 01100011 01100001 01110100. </b>
-  <p> Match the binary to the letters! </p>
-  <!--- https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript --->  
-  <!-- https://www.dummies.com/web-design-development/site-development/how-to-put-text-boxes-in-an-html5-form/ -->
-  <label>What corresponds to 01100011?</label>
-          <input type = "text"
-                 id = "firstBox"
-                 answerFirst = "text here" />
-  <br>
-    <label>What corresponds to 01100001?</label>
-          <input type = "text"
-                 id = "secondBox"
-                 answerSecond = "text here" />
-  <br>
-      <label>What corresponds to 01110100?</label>
-          <input type = "text"
-                 id = "thirdBox"
-                 answerThird = "text here" />
-  
-  <button onclick="check()">Submit</button>
-  <button onClick="sanity()">sanity</button>
-  
+    <body>
+        <div class="center">
+            <h1> 
+                Binary 
+            </h1>
+            <p>
+                Binary is the language of computers, and it works only in zeros and ones. Every letter has its own unique combination of zeros and ones.
+            </p>
+        </div>
+        <div class="center" style="border: none;">
+            <b>The binary for <i> cat </i> is 01100011 01100001 01110100.</b>
+            <p> Match the binary to the letters! </p>
+        </div>
+            <!--- https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript --->  
+            <!-- https://www.dummies.com/web-design-development/site-development/how-to-put-text-boxes-in-an-html5-form/ -->
 
-  
-  <script>
-    //https://stackoverflow.com/questions/25899694/comparing-form-input-values
-    //https://www.w3schools.com/jsref/prop_style_display.asp
-    var firstBoxJS = document.getElementById('firstBox');
-    var secondBoxJS = document.getElementById('secondBox');
-    var thirdBoxJS = document.getElementById('thirdBox');    
+            <div class="center" style="border: none;">
+                <label>What corresponds to 01100011?</label>
+                <textarea class="use-keyboard-input" style="width: 10%; max-width: 10%; height: 10%;" id=firstBox></textarea>
+            </div>
+
+            <div class="center" style="border: none;">
+                <label>What corresponds to 01100001?</label>
+                <textarea class="use-keyboard-input" style="width: 10%; max-width: 10%; height: 10%;" id=secondBox></textarea>
+            </div>
+
+            <div class="center" style="border: none;">
+                <label>What corresponds to 01110100?</label>
+                <textarea class="use-keyboard-input" style="width: 10%; max-width: 10%; height: 10%;" id=thirdBox></textarea>
+            </div>
+
+            <div class="center" style="border:none">
+                <button onclick="check()">Submit</button>
+                <button onClick="sanity()">sanity</button>
+            </div>
     
-    function check(){
-      console.log("checking...");
-      var correct = 0;
-      
-      if(firstBoxJS.value != "c"){
-        alert("Your first answer is incorrect, please try again!");
-      } else {
-        alert("Your first answer is correct, great job!");
-        correct++;
-      }
-      console.log("correct: " + correct);
+    <script>
+        //https://stackoverflow.com/questions/25899694/comparing-form-input-values
+        //https://www.w3schools.com/jsref/prop_style_display.asp
+        var firstBoxJS = document.getElementById('firstBox');
+        var secondBoxJS = document.getElementById('secondBox');
+        var thirdBoxJS = document.getElementById('thirdBox');    
+        
+        function check(){
+        console.log("checking...");
+        var correct = 0;
+        
+        if(firstBoxJS.value != "c"){
+            alert("Your first answer is incorrect, please try again!");
+        } else {
+            alert("Your first answer is correct, great job!");
+            correct++;
+        }
+        console.log("correct: " + correct);
 
-      if(secondBoxJS.value != "a"){
-        alert("Your second answer is incorrect, please try again!");
-      } else {
-        alert("Your second answer is correct, great job!");
-        correct++;
-      }
-      console.log("correct: " + correct);
+        if(secondBoxJS.value != "a"){
+            alert("Your second answer is incorrect, please try again!");
+        } else {
+            alert("Your second answer is correct, great job!");
+            correct++;
+        }
+        console.log("correct: " + correct);
 
-      if(thirdBoxJS.value != "t"){
-        alert("Your third answer is incorrect, please try again!");
-      } else {
-        alert("Your third answer is correct, great job!");
-        correct++;
-      }
-      console.log("correct: " + correct);
-      
-      if(correct == 3){
+        if(thirdBoxJS.value != "t"){
+            alert("Your third answer is incorrect, please try again!");
+        } else {
+            alert("Your third answer is correct, great job!");
+            correct++;
+        }
+        console.log("correct: " + correct);
+        
+        if(correct == 3){
+            document.getElementById("continue").style.display = "block";
+        }
+        }
+
+        function sanity(){
         document.getElementById("continue").style.display = "block";
-      }
-    }
+        }
 
-    function sanity(){
-      document.getElementById("continue").style.display = "block";
-    }
+    </script>
+    <div class="center">
+        <div id="continue" style="display:none; max-width: fit-content;">
+            <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
+            <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
+        </div>
+    </div>
 
-  </script>
-  <div id="continue" style="display:none;">
-    <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
-    <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
-  </div>
-  
-</body>
+
+    <script src="Keyboard/Keyboard.js"></script>
+    
+    </body>
 </html>
