@@ -1,3 +1,12 @@
+##Komputer Learn
+
+#How does a computer work?
+
+#How does the internet work?
+
+#Submit a thing!
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/sporadicAbigail/t9hacks-2020/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
