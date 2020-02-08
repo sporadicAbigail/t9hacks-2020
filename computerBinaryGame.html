@@ -46,19 +46,19 @@
     var correct = 0;
     
     function check(){
-      if(firstBoxJS.answerFirst.value != c){
+      if(firstBoxJS.answerFirst.value != "c"){
         alert("Your first answer is incorrect, please try again!");
       } else {
         alert("Your first answer is correct, great job!");
         correct++;
       }
-      if(secondBoxJS.answerSecond.value != a){
+      if(secondBoxJS.answerSecond.value != "a"){
          alert("Your second answer is incorrect, please try again!");
       } else {
         alert("Your second answer is correct, great job!");
         correct++;
       }
-      if(thirdBoxJS.answerThird.value != t){
+      if(thirdBoxJS.answerThird.value != "t"){
         alert("Your third answer is incorrect, please try again!");
       } else {
         alert("Your third answer is correct, great job!");
@@ -76,7 +76,6 @@
 <div id="continue" style="display:none;">
   <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
   <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
-  yellow world
 </div>
   
 </body>
