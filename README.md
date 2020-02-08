@@ -1,10 +1,10 @@
-##Komputer Learn
+## Komputer Learn
 
-#How does a computer work?
+# How does a computer work?
 
-#How does the internet work?
+# How does the internet work?
 
-#Submit a thing!
+# Submit a thing!
 
 
 ## Welcome to GitHub Pages
