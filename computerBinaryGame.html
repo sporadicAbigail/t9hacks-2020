@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <body>
 
   <h1> Binary </h1>
@@ -12,17 +13,48 @@
   <label>What corresponds to 01100011?</label>
           <input type = "text"
                  id = "firstBox"
-                 value = "text here" />
+                 answerFirst = "text here" />
   <br>
     <label>What corresponds to 01100001?</label>
           <input type = "text"
                  id = "secondBox"
-                 value = "text here" />
+                 answerSecond = "text here" />
   <br>
       <label>What corresponds to 01110100?</label>
           <input type = "text"
                  id = "thirdBox"
-                 value = "text here" />
+                 answerThird = "text here" />
+  
+  <button onclick="check()">Submit</button>
+  
+  <script>
+    //https://stackoverflow.com/questions/25899694/comparing-form-input-values
+    var firstBoxJS = document.getElementById('firstBox');
+    var secondBoxJS = document.getElementById('secondBox');
+    var thirdBoxJS = document.getElementByID('thirdBox');
+    var correct = 0;
+    
+    function check(){
+      if(firstBoxJS.answerFirst.value != c){
+        alert("Your first answer is incorrect, please try again!");
+      } else {
+        alert("Your first answer is correct, great job!");
+        correct++;
+      }
+      if(secondBoxJS.answerSecond.value != a){
+         alert("Your second answer is incorrect, please try again!");
+      } else {
+        alert("Your second answer is correct, great job!");
+        correct++;
+      }
+      if(thirdBoxJS.answerThird.value != t){
+        alert("Your third answer is incorrect, please try again!");
+      } else {
+        alert("Your third answer is correct, great job!");
+        correct++;
+      }
+    }
+  </script>
   
 </body>
 </html>
