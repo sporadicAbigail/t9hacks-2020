@@ -62,44 +62,49 @@
     //https://www.w3schools.com/jsref/prop_style_display.asp
     var firstBoxJS = document.getElementById('firstBox');
     var secondBoxJS = document.getElementById('secondBox');
-    var thirdBoxJS = document.getElementByID('thirdBox');
-    var correct = 0;
+    var thirdBoxJS = document.getElementById('thirdBox');    
     
     function check(){
-      if(firstBoxJS.answerFirst.value != "c"){
+      console.log("checking...");
+      var correct = 0;
+      
+      if(firstBoxJS.value != "c"){
         alert("Your first answer is incorrect, please try again!");
-        document.getElementById("continue").style.display = "block";
       } else {
         alert("Your first answer is correct, great job!");
         correct++;
       }
-      if(secondBoxJS.answerSecond.value != "a"){
-         alert("Your second answer is incorrect, please try again!");
+      console.log("correct: " + correct);
+
+      if(secondBoxJS.value != "a"){
+        alert("Your second answer is incorrect, please try again!");
       } else {
         alert("Your second answer is correct, great job!");
         correct++;
       }
-      if(thirdBoxJS.answerThird.value != "t"){
+      console.log("correct: " + correct);
+
+      if(thirdBoxJS.value != "t"){
         alert("Your third answer is incorrect, please try again!");
       } else {
         alert("Your third answer is correct, great job!");
         correct++;
       }
+      console.log("correct: " + correct);
       
-      if (correct == 3){
-          document.getElementById("continue").style.display = "block";
-      }
-    }
-      function sanity(){
+      if(correct == 3){
         document.getElementById("continue").style.display = "block";
       }
+    }
+
+    function sanity(){
+      document.getElementById("continue").style.display = "block";
+    }
+
   </script>
-<div id="continue" style="display:none;">
-  <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
-  <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
-</div>
-<div id="gah" style="display:block;">
-  one
+  <div id="continue" style="display:none;">
+    <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
+    <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
   </div>
   
 </body>
