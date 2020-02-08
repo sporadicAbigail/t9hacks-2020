@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+#continue {
+  <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
+  <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
+}
 <body>
 
   <h1> Binary </h1>
@@ -26,6 +30,8 @@
                  answerThird = "text here" />
   
   <button onclick="check()">Submit</button>
+  
+
   
   <script>
     //https://stackoverflow.com/questions/25899694/comparing-form-input-values
@@ -53,6 +59,9 @@
         alert("Your third answer is correct, great job!");
         correct++;
       }
+      
+      if (correct == 3){
+        
     }
   </script>
   
