@@ -7,6 +7,11 @@
   height: 100px;
   background-color: lightblue;
 }
+#gah {
+  width: 1000px;
+  height: 100px;
+  background-color: pink;
+}
 </style>
 <body>
 
@@ -48,6 +53,7 @@
     function check(){
       if(firstBoxJS.answerFirst.value != "c"){
         alert("Your first answer is incorrect, please try again!");
+        document.getElementById("continue").style.display = "block";
       } else {
         alert("Your first answer is correct, great job!");
         correct++;
@@ -77,6 +83,9 @@
   <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
   <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
 </div>
+<div id="gah" style="display:none;">
+  one
+  </div>
   
 </body>
 </html>
