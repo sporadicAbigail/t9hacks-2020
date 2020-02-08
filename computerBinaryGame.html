@@ -33,6 +33,7 @@
                  answerThird = "text here" />
   
   <button onclick="check()">Submit</button>
+  <button onClick="sanity()">sanity</button>
   
 
   
@@ -65,10 +66,14 @@
       }
       
       if (correct == 3){
-          document.getElementById("continue").style.display = "none";
+          document.getElementById("continue").style.display = "block";
+      }
     }
+      function sanity(){
+        document.getElementById("continue").style.display = "block";
+      }
   </script>
-<div id="continue">
+<div id="continue" style="display:none;">
   <h3> Great job! You matched the binary to the letters correctly! Click on the button to continue. </h3>
   <button onclick="window.location.href = 'https://w3docs.com';"> Next page </button>
   yellow world
