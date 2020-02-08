@@ -72,7 +72,6 @@ const Keyboard = {
                        this.properities.value = this.properities.value.substring(0, this.properities.value.length -1);
                        this._triggerEvent("oninput");
                     });
-
                     break;
                 
                 case "caps":
@@ -83,7 +82,6 @@ const Keyboard = {
                         this._toggleCapsLock();
                         keyElement.classList.toggle("keyboard__key--activate", this.properities.capslock);
                     });
-
                     break;
 
                 case "enter":
@@ -94,7 +92,6 @@ const Keyboard = {
                         this.properities.value += "\n";
                         this._triggerEvent("oninput");
                     });
-
                     break;
                 
                 case "space":
@@ -105,7 +102,6 @@ const Keyboard = {
                         this.properities.value += " ";
                         this._triggerEvent("oninput");
                     });
-
                     break;
                 
                 case "done":
@@ -116,7 +112,6 @@ const Keyboard = {
                         this.close();
                         this._triggerEvent("onclose");
                     });
-
                     break;
 
                 default:
@@ -126,7 +121,6 @@ const Keyboard = {
                         this.properities.value += this.properities.capslock ? key.toUpperCase() : key.toLowerCase();
                         this._triggerEvent("oninput");
                     });
-
                     break;
             }
 
