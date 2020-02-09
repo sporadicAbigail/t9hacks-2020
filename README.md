@@ -26,6 +26,6 @@ We want to expand and create more tutorials for more concepts. We also have plan
 Microsoft powerpoint, JavaScript, HTML
 
 ## Who created what?
-https://github.com/jasonlubrano created the online keyboard, https://sporadicabigail.github.io/t9hacks-2020/html/KeyboardTouchType.html, repository setup, and border styling (.center)
-https://github.com/sporadicAbigail created the binary game (debugging by Jason), starting page, and ending page 
-Button code from: w3schools.com/css/css3_buttons.asp
+- https://github.com/jasonlubrano created the online keyboard, https://sporadicabigail.github.io/t9hacks-2020/html/KeyboardTouchType.html, repository setup, and border styling (.center)
+- https://github.com/sporadicAbigail created the binary game (debugging by Jason), starting page, and ending page 
+- Button code from: w3schools.com/css/css3_buttons.asp
