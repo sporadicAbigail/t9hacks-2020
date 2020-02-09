@@ -10,14 +10,14 @@ It makes Computer Science concepts (like what is a computer, and what is the int
 We built our simulation using Microsoft Powerpoint, HTML, CSS, Javascript and love.
 
 ## Challenges we ran into
-Learning how to code and design a front end system was a challenge for Jason. Abigail ran into a specific problem regarding javascript checking of the contents in the boxes.
+Learning how to code and design a front end system was a challenge for Jason. Abigail ran into a specific problem regarding javascript checking of the contents in the boxes. Andrea had issues with java on her machine.
 
 ## Accomplishments that we're proud of
 We were able to create a pop up keyboard. Also, it has been a couple years since Abigail has coded with HTML, so to build a site in a short amount of time that functions is really cool.
 
 ## What we learned
-Jason: front end coding
-Abigail: re-learned HTML + JS
+- Jason: front end coding
+- Abigail: re-learned HTML + JS
 
 ## What's next for KomputerLearn
 We want to expand and create more tutorials for more concepts. We also have plans to create humanoid characters to help describe the concepts better.
