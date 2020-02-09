@@ -1,46 +1,27 @@
 # Komputer Learn
 
-## How does a computer work?
+## Inspiration
+We wanted to solve the problem of under priviledged children not having the chance to learn STEM concepts because even though there are STEM schools, they are expensive.
 
-## How does the internet work?
+## What it does
+It makes Computer Science concepts (like what is a computer, and what is the internet) we've learned in college available online in an interactive and fun way. By introducing these concepts to our target audience at a young age, they'll be more comfortable with these concepts when they encounter them again when they're older.
 
-## Submit a thing!
+## How we built it
+We built our simulation using Microsoft Powerpoint, HTML, CSS, Javascript and love.
 
+## Challenges we ran into
+Learning how to code and design a front end system was a challenge for Jason. Abigail ran into a specific problem regarding javascript checking of the contents in the boxes.
 
-## Welcome to GitHub Pages
+## Accomplishments that we're proud of
+We were able to create a pop up keyboard. Also, it has been a couple years since Abigail has coded with HTML, so to build a site in a short amount of time that functions is really cool.
 
-You can use the [editor on GitHub](https://github.com/sporadicAbigail/t9hacks-2020/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## What we learned
+Jason: front end coding
+Abigail: re-learned HTML + JS
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## What's next for KomputerLearn
+We want to expand and create more tutorials for more concepts. We also have plans to create humanoid characters to help describe the concepts better.
 
-### Markdown
+## Built With
+Microsoft powerpoint, JavaScript, HTML
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sporadicAbigail/t9hacks-2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
